@@ -1,0 +1,28 @@
+### Create a new user
+POST http://localhost:8000/auth/signup
+content-type: application/json
+
+{
+  "email": "vinh4@gmail.com",
+  "password": "adads"
+}
+
+### Get a new user by ID
+GET http://localhost:8000/auth/112
+
+###
+GET http://localhost:8000/auth/users
+
+###
+GET http://localhost:8000/auth?email=vinh4@gmail.com
+
+###
+DELETE http://localhost:8000/auth/1
+
+###
+PATCH http://localhost:8000/auth/1
+content-type: application/json
+
+{
+  "password": "Vinhnguyen123@"
+}
